@@ -1,0 +1,11 @@
+#!/bin/bash
+
+FILTER="$*"
+FILES=()
+
+while read -r line
+do
+  FILES+=("$line")
+done < <(fzf --multi --query "!.local/ .pdf$ $FILTER " --bind 'ctrl-space:execute(okular {} &)')
+
+okular "${FILES[@]}" &
