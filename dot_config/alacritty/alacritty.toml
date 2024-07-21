@@ -1,0 +1,80 @@
+import = ["~/.config/alacritty/gruvbox_dark.toml"]
+
+live_config_reload = true
+
+[selection]
+save_to_clipboard = true
+
+[colors]
+draw_bold_text_with_bright_colors = false
+
+[cursor]
+style = "Underline"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 12
+normal = { family = "Iosevka Nerd Font Mono", style = "Medium" }
+italic = { family = "Iosevka Nerd Font Mono", style = "Medium Italic" }
+bold = { family = "Iosevka Nerd Font Mono", style = "Bold" }
+bold_italic = { family = "Iosevka Nerd Font Mono", style = "Bold Italic" }
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "Copy"
+key = "C"
+mods = "Control|Shift"
+
+[[keyboard.bindings]]
+action = "PasteSelection"
+key = "Insert"
+mods = "Shift"
+
+[[keyboard.bindings]]
+action = "ResetFontSize"
+key = "Key0"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "IncreaseFontSize"
+key = "Equals"
+mods = "Control"
+
+[[keyboard.bindings]]
+action = "DecreaseFontSize"
+key = "Minus"
+mods = "Control"
+
+[mouse]
+hide_when_typing = true
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[shell]
+args = ["--login"]
+program = "/usr/bin/zsh"
+
+[window]
+decorations = "full"
+dynamic_padding = true
+opacity = 0.9
+blur = true
+title = "Alacritty@Garuda"
+dynamic_title = true
+padding = { x = 5, y = 5 }
+
+[window.class]
+general = "Alacritty"
+instance = "Alacritty"
+
+[window.dimensions]
+columns = 200
+lines = 50
