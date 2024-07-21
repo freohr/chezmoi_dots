@@ -1,0 +1,21 @@
+max-visible=2
+anchor=top-right
+layer=overlay
+default-timeout=3000
+font=Iosevka Nerf Font Mono Medium 10
+
+icons=1
+markup=1
+
+padding=3
+
+background-color=#32302f
+progress-color=#b0b846
+text-color=#e2cca9
+
+border-color=#1b1b1b
+border-size=2
+border-radius=2
+
+width=400
+height=200

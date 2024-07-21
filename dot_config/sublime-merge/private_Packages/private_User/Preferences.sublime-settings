@@ -1,0 +1,9 @@
+{
+	"side_bar_layout": "commit_graph_as_column",
+	/*"editor_argument_format": "--goto ${file}:${line}:${col}",*/
+	/*"editor_path": "code",*/
+	"font_face": "Iosevka Nerd Font Mono Medium",
+	"font_size": 11,
+	"hide_menu": true,
+	"time_format": "24h",
+}

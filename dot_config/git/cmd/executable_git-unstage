@@ -1,0 +1,5 @@
+#!/bin/bash
+
+FILES="$*"
+
+git reset HEAD $FILES
