@@ -1,16 +1,18 @@
+@import url("gruvbox-material.css");
+
 * {
   border: none;
   border-radius: 0px;
   font-family: "Iosevka Aile";
   font-size: 14px;
   min-height: 0;
-  color: #ebdbb2;
+  color: @fg;
 }
 
 window#waybar {
   border-bottom-style: inset;
-  border-bottom: 4px solid #689d6a;
-  background: #1d2021;
+  border-bottom: 2px solid @aqua;
+  background: @bg;
 }
 
 #workspaces,
@@ -26,19 +28,19 @@ window#waybar {
 
 /* Workspace Buttons */
 #workspaces button label {
-  color: #689d6a;
+  color: @aqua;
 }
 
-#workspaces button.focused label {
-  color: #1d2021;
+#workspaces button.active label {
+  color: @purple;
 }
 
-#workspaces button.focused {
-  background: #689d6a;
+#workspaces button:hover label {
+  color: @yellow;
 }
 
 #mode {
-  background-color: #cc241d;
+  background-color: @red;
   color: white;
 }
 
@@ -60,30 +62,42 @@ window#waybar {
 }
 
 #idle_inhibitor.activated {
-  background-color: #689d6a;
-  color: #1d2021;
+  background-color: @aqua;
+  color: @bg;
 }
 
 #custom-music {
-  color: #b8bb26;
+  color: @green;
   margin: 0 15px;
   padding: 0 20px;
-  border-bottom: 4px solid #b8bb26;
+  border-bottom: 2px solid @green;
 }
 
 #clock {
   margin: 0;
-  color: #fabd2f;
-  border-bottom: 4px solid #fabd2f;
+  color: @yellow;
+  border-bottom: 2px solid @yellow;
 }
 
 #network.disconnected {
-  color: #cc241d;
-  border-bottom: 4px solid #cc241d;
+  color: @red;
+  border-bottom: 2px solid @red;
 }
 
 #pulseaudio.muted {
   padding: 0 20px;
-  color: #cc241d;
-  border-bottom: 4px solid #cc241d;
+  color: @red;
+  border-bottom: 2px solid @red;
+}
+
+#custom-media.playing {
+  border-bottom: 2px solid @green;
+}
+
+#custom-media.paused {
+  border-bottom: 2px solid @orange;
+}
+
+#custom-media.stopped {
+  border-bottom: 2px solid @red;
 }
